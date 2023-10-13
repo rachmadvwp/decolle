@@ -1,4 +1,4 @@
-# Deep Continuous Local Learning (DECOLLE)
+# Deep Continuous Local Learning (DECOLLE) [updated]
 
 DECOLLE is an online learning framework for spiking neural networks.
 The algorithmic details are described in this [Frontiers paper](https://www.frontiersin.org/articles/10.3389/fnins.2020.00424/full).
@@ -24,17 +24,29 @@ git clone https://github.com/nmi-lab/decolle-public.git
 cd decolle-public
 python setup.py install --user
 ```
+If the setup process is not working, try:
+```
+python3 setup.py install --user
+```
 
 The following will run decolle on the default parameter set
 ```
 cd scripts
 python train_lenet_decolle.py
 ```
+If the run process is not working, try:
+```
+python3 train_lenet_decolle.py
+```
 
 All parameter sets are contained in scripts/parameters, you can use them as such:
 ```
 cd scripts
 python train_lenet_decolle.py --params_file=parameters/params_dvsgestures_torchneuromorphic_attention.yml
+```
+Alternative:
+```
+python3 train_lenet_decolle.py --params_file=parameters/params_dvsgestures_torchneuromorphic_attention.yml
 ```
 
 ## Authors
