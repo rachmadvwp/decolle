@@ -29,7 +29,8 @@ python setup.py install --user
 git clone https://github.com/rachmadvwp/decolle.git
 cd decolle
 conda create -n decolle python=3.9
-pip install torch==1.12.0 torchvision==0.14.0
+pip install torch==1.12.0
+pip install torchvision==0.14.0
 python setup.py install --user
 ```
 [Updated] Then, prepare the dataset.
