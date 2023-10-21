@@ -17,7 +17,7 @@ DOI={10.3389/fnins.2020.00424},
 ISSN={1662-453X}
 ```
 
-### Installing
+### [Updated] Installing 
 Clone and install. The Python setuptools will take care of dependencies
 ```
 git clone https://github.com/nmi-lab/decolle-public.git
@@ -26,17 +26,18 @@ python setup.py install --user
 ```
 [Updated] If the setup process is not working, try:
 ```
-python3 setup.py install --user
+git clone https://github.com/rachmadvwp/decolle.git
+cd decolle
+conda create -n decolle python=3.9
+pip install torch==1.12.0 torchvision==0.14.0
+python setup.py install --user
 ```
+[Updated] Then, prepare the dataset.
 
 The following will run decolle on the default parameter set
 ```
 cd scripts
 python train_lenet_decolle.py
-```
-If the run process is not working, try:
-```
-python3 train_lenet_decolle.py
 ```
 
 All parameter sets are contained in scripts/parameters, you can use them as such:
