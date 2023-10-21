@@ -24,7 +24,7 @@ git clone https://github.com/nmi-lab/decolle-public.git
 cd decolle-public
 python setup.py install --user
 ```
-If the setup process is not working, try:
+[Updated] If the setup process is not working, try:
 ```
 python3 setup.py install --user
 ```
